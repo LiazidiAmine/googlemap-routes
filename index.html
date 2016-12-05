@@ -27,26 +27,25 @@
 
     <body>
         <div class="content">
-            <div class="inputs">
-                <div class="input-group">
-                  <input type="text" id="routeFrom" name="routeFrom" class="form-control" placeholder="Departure" aria-describedby="basic-addon2">
-                  <span class="input-group-addon" id="basic-addon2">From</span>
+            <div class="form-inline form-input">
+                <div class="form-group">
+                    <label class="sr-only" for="inputEmail">Email</label>
+                    <input type="text" class="form-control" id="routeFrom" name="routeFrom" placeholder="Departure">
                 </div>
-                <div class="input-group">
-                  <input type="text" id="routeTo" name="routeTo" class="form-control" placeholder="Arrival" aria-describedby="basic-addon2">
-                  <span class="input-group-addon" id="basic-addon2">To</span>
+                <div class="form-group">
+                    <label class="sr-only" for="inputPassword">Password</label>
+                    <input type="text" class="form-control" id="routeTo" name="routeTo" placeholder="Arrival">
                 </div>
-                <select id="routeMode" name="routeMode">
-                    <option value="DRIVING">Driving</option>
-                    <option value="WALKING">Walking</option>
-                    <option value="BICYCLING">Bicycling</option>
-                    <option value="TRANSIT">Transit</option>
-                </select>
-                <label for="routeMode">Mode</label><br />
-                <div class="textcenter">
-                    <button id="routeGo">Route</button>
-                    <button id="routeClear">Clear Route</button>
+                <div class="form-group">
+                    <select id="routeMode" name="routeMode" class="form-control">
+                        <option value="DRIVING">Driving</option>
+                        <option value="WALKING">Walking</option>
+                        <option value="BICYCLING">Bicycling</option>
+                        <option value="TRANSIT">Transit</option>
+                    </select>
                 </div>
+                <button id="routeGo" class="btn btn-primary">Route</button>
+                <button id="routeClear" class="btn btn-primary">Clear Route</button>
             </div>
             <div id="map_canvas"></div>
         </div>
