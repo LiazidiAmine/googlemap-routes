@@ -6,7 +6,7 @@ var map;
 $(window).load(function() {
     var myOptions = {
         zoom: 10,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeId: google.maps.MapTypeId.SATELLITE,
         center: new google.maps.LatLng(35.270, -80.837)
     };
     map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
